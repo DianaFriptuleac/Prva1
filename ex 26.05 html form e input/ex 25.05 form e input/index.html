@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form e input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Esempio Form</h1>
+    <form action="salva i tuoi dati" method="post">
+        <fieldset class="dati">
+            <legend>Dati Anagrafici</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="Nome" required>
+            <label for="cognome">Cognome</label>
+            <input type="text" name="cognome">
+            <label for="codice fiscale">Codice Fiscale</label>
+            <input type="text" name="codice fiscale" placeholder="il tuo codice fiscale">
+            <label for="data">Data di Nascita</label>
+            <input type="date" name="Data di Nascita">
+            <label for="provincia di nascita">Provincia di Nascità</label>
+            <select name="provincia di nascita">
+                <option value="">Seleziona</option>
+                <option value="pa">PA</option>
+                <option value="re">RE</option>
+                <option value="mi">MI</option>
+                <option value="ro">RO</option>
+            </select>
+            <label for="numero di telefono">Numero di telefono</label>
+            <input type="number">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Inserisci la tua email">
+            
+        </fieldset>
+        <fieldset class="dati-secondari">
+            <legend>Dati Secondari</legend>
+            <span class="titolo-interessi">Interessi</span>
+            <div>
+                <input type="checkbox" id="basket" name="basket" value="Basket" checked >
+                <label for="basket">Bascket</label>
+            </div>
+            <div>
+                <input type="checkbox" id="calcio" name="calcio" value="Calcio">
+                  <label for="calcio">Calcio</label>
+            </div>
+            <div>
+                <input type="checkbox" id="tennis" name="tennis" value="Tennis">
+                <label for="tennis">Tennis</label>
+            </div>
+                <div class="Interessi">
+                <label for="colore">Colore preferito</label>
+                <input type="color" name="colore">
+                <label for="file">File Aggiuntivi</label>
+                <input type="file" name="file" multiple>
+            </div>
+                <span style="margin-top: 10px;" > Genere</span>
+                <div>
+                    <input type="radio" name="genere" value="m">Maschio
+                    <input type="radio" name="genere" value="f">Femmina
+                </div>
+
+            
+        </fieldset>
+        <div class="buttom">
+        <input type="submit" value="Invia Form">
+        <input type="reset" value="Resetta tutto">
+        </div>
+
+    </form>
+</body>
+</html>

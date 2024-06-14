@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impariamo form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Esercizio 4</h1>  
+
+  <h2>Pokèdex:</h2>
+  
+  <p>Rispondi alle seguenti domande e clicca su <span><b>Invia</b></span> per spedire i risultati.</p>
+  <form onsubmit="alert('Form Inviato')" method="post">
+    <ol>
+        <li>Quali tra questi Pokèmon hai catturato?</li>
+        <table id="Pokemon">
+            <tr>
+                <td>
+            <input type="checkbox" name="checkbox" value="Pikachu">Pikachu
+               </td>
+               <td>
+                <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" alt="Pikachu">
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" value="Jigglypuff">Jigglypuff
+                </td>
+                <td>
+                    <img src="https://archives.bulbagarden.net/media/upload/thumb/3/3a/0039Jigglypuff.png/800px-0039Jigglypuff.png" alt="Jigglypuff">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" value="MR. Mime"> MR. Mime
+                </td>
+                <td>
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//122.png" alt="MR. Mime">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" value="Eevee">Eevee
+                </td>
+                <td>
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//133.png" alt="Eevee">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" value="Onix">Onix
+                </td>
+                <td>
+                    <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/095.png" alt="Onix">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" value="Charmander">Charmander
+
+                </td>
+                <td>
+                    <img src="https://img.pokemondb.net/artwork/large/charmander.jpg" alt="Charmander">
+                </td>
+            </tr>
+        </table>
+        <li>
+            Qual è il tuo Pokèmon preferito tra questi?
+       
+    </ol>
+    <select name="Pokèmon">
+        <option value="">Seleziona</option>
+        <option value="Pikachu">Pikachu</option>
+        <option value="Jigglypuff">Jigglypuff</option>
+        <option value="Mr.Mime">Mr.Mime</option>
+        <option value="Eevee">Eevee</option>
+        <option value="Onix">Onix</option>
+        <option value="Charmander">Charmander</option>
+    </select>
+</li>
+
+<div class="input">
+<input type="submit" name="submit" value="Invia">
+<input type="reset" name="reset" value="Annulla">
+</div>
+  </form>
+ 
+</body>
+</html>

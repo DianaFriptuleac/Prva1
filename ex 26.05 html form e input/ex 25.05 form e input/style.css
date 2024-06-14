@@ -1,0 +1,25 @@
+.dati{
+margin-right: 50em;
+padding: 15px;
+padding-top: 0;
+}
+.dati input {
+    display: block;
+}
+.dati select{
+    display: block;
+}
+.dati-secondari{
+    margin-right: 50em;
+    padding:15px;
+}
+
+.titolo-interessi{
+font-size: 1.5em;
+}
+.Interessi input{
+    display: block;
+}
+.buttom input{
+ background-color: rgb(12, 242, 242);
+}
